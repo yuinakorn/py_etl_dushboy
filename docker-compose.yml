@@ -1,7 +1,7 @@
 version: '3'
 services:
   main:
-    image: 'yuinakorn/py_etl_dushboy:latest'
+    image: 'yuinakorn/py_etl_dustboy:latest'
     volumes:
       - "./:/app"
     restart: 'unless-stopped'
