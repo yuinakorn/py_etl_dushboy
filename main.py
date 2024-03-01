@@ -48,6 +48,7 @@ def import_to_133(df):
     try:
         with engine133.connect() as con133:
             df.to_sql('irf_backup', con133, if_exists='replace', index=False)
+            print(df)
             count_rows = df.shape[0]
             print(f"Data inserted {count_rows} rows to database 133 successfully!")
 
